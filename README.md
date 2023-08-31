@@ -46,6 +46,7 @@ Run the seeder to load the tables with fake data
 ```
 php artisan db:seed --class=UserSeeder
 ```
+### After run `php artisan db:seed --class=UserSeeder` you may get a `BadMethodCallException` error in the console, please ignore it 
 ```
 php artisan db:seed --class=UserImageSeeder
 ```
