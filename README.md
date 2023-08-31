@@ -44,8 +44,10 @@ php artisan migrate
 ### Step 8
 Run the seeder to load the tables with fake data
 ```
-php artisan make:seeder UserSeeder
-php artisan make:seeder UserImageSeeder
+php artisan db:seed --class=UserSeeder
+```
+```
+php artisan db:seed --class=UserImageSeeder
 ```
 ### Step 9
 Open a web browser and go to http://localhost to view the app.
