@@ -20,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::post('/users', [UserController::class, 'createUser']);
 Route::get('/users', [UserController::class, 'getUsers']);
-Route::get('/user/{id}', [UserController::class, 'getUserById']);
+Route::post('/users-create', [UserController::class, 'createUserWithImage']);
+Route::post('/users/string', [UserController::class, 'createUserWithImageString']);
 
-
-Route::post('/images', [UserImageController::class, 'createImage']);
